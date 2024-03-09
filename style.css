@@ -3,7 +3,7 @@ body{
     padding: 0px;
     font-family: Arial;
     background-color: black;
-    font-size: 1.5rem;
+    font-size: 1.5em;
 }
 
 .nav-header, .nav-footer {
@@ -46,7 +46,8 @@ h1 {
     margin: 0px;
     padding: 50px 0;
     text-align: center;
-    color: black;
+    color: rgb(53, 53, 53);
+    font-weight: 1000;
 }
 
 footer {
@@ -77,5 +78,11 @@ footer {
         padding: 10px; /* Adjust padding for smaller screens */
         width: 100%; /* Make links fill the container */
         text-align: center; /* Ensure text is centered */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 1.25em; /* Increase the base size on small screens */
     }
 }
