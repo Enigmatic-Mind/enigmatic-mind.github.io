@@ -1,0 +1,57 @@
+
+ul {
+    display: flex;
+    list-style-type: none;
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    justify-content: flex-end;
+}
+
+.navbar a, .nav-footer a{
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    display: inline-block;
+    text-align: center;
+}
+
+
+/* Navbar and Dropdown Styles */
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333; /* Dark background for the navbar */
+}
+
+.navbar li {
+    float: left;
+    overflow: hidden;
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar li a:hover, .dropdown:hover .dropbtn {
+    background-color: #555; /* Hover color */
+}
+
+
+/* Show dropdown content on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Style dropdown links */
+.dropdown-content li {
+    float: none;
+}
+

@@ -1,37 +1,72 @@
-body{    
-    margin: 0px;
-    padding: 0px;
+body {
+    margin: 0;
+    padding: 0;
     font-family: Arial;
     background-color: black;
     font-size: 1.5em;
 }
 
-.nav-header, .nav-footer {
-    background-color: black;
+.navbar {
+    background-color: black; /* Updated to match your site's theme */
     width: 100%;
-}
-
-.nav-header ul {
     display: flex;
+    justify-content: flex-end; /* Aligns nav items to the right */
     list-style-type: none;
-    background-color: black;
-    padding: 0;
     margin: 0;
-    overflow: hidden;
-    justify-content: flex-end;
+    padding: 0;
 }
 
-.nav-header a, .nav-footer a{
+.navbar ul {
+    list-style-type: none;
+    padding: 0 10px;
+    margin: 0; /* Resets default margin */
+}
+
+.navbar a {
     color: white;
     text-decoration: none;
-    padding: 20px;
-    display: inline-block;
+    padding: 10px;
+    display: block; /* Changed to block for consistency with dropdown styles */
     text-align: center;
 }
 
-.nav-header a:hover, .nav-footer a:hover{
-    color: gray;
+.navbar a:hover, .nav-footer a:hover, .dropdown:hover .dropbtn {
+    color: gray; /* Maintain your hover color */
 }
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+}
+
+.navbar li {
+    float: left; /* For horizontal layout */
+    position: relative; /* For dropdown positioning */
+}
+
+/* Dropdown Content */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    color: white;
+    min-width: 160px;
+    z-index: 1;
+    flex-direction: column;
+    align-items: center; /* This will center-align the child elements */
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 0px; /* Adjust padding as needed, ensure it's symmetrical */
+    text-decoration: none;
+    text-align: center; /* This ensures text alignment */
+    width: 100%; /* Ensures link uses full width of its container */
+}
+
 
 .home_img {
     width: 100%;
@@ -40,10 +75,10 @@ body{
 
 h1 {
     position: absolute;
-    top: 0px;
+    top: 0;
     left: 0;
     right: 0;
-    margin: 0px;
+    margin: 0;
     padding: 50px 0;
     text-align: center;
     color: rgb(53, 53, 53);
@@ -52,37 +87,45 @@ h1 {
 
 footer {
     position: relative;
-    bottom: 0px;
+    bottom: 0;
     background-color: black;
     width: 100%;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     text-align: center;
 }
 
+.nav-footer a{
+    text-decoration: none;
+    color: white;
+}
 
-/* New media query for screens smaller than 768px */
+/* Responsive adjustments */
 @media screen and (max-width: 768px) {
-    .nav-header ul {
-        display: flex; /* Use flexbox */
+    .navbar {
         flex-direction: column; /* Stack items vertically */
-        align-items: center; /* Center items horizontally */
-        padding: 20px 0; /* Add some padding on top and bottom */
+        align-items: center; /* Center items */
+    }
+    
+
+    .navbar li, .dropdown-content li {
+        width: 100%; /* Full width for stacked items */
     }
 
-    .nav-header li {
-        float: none; /* Disable floating */
+    .navbar a {
+        padding: 10px;
+        text-align: center;
+        width: 100%;
     }
 
-    .nav-header a {
-        padding: 10px; /* Adjust padding for smaller screens */
-        width: 100%; /* Make links fill the container */
-        text-align: center; /* Ensure text is centered */
+    .dropdown-content {
+        /* left: 25%;
+        transform: translateX(0%); */
     }
 }
 
 @media screen and (max-width: 480px) {
     body {
-        font-size: 1.25em; /* Increase the base size on small screens */
+        font-size: 1.25em; /* Adjust font size for smaller screens */
     }
 }
