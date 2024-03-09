@@ -1,19 +1,23 @@
+:root {
+    --main-bg-color: rgb(39, 39, 39);
+}
+
 body {
     margin: 0;
     padding: 0;
     font-family: Arial;
-    background-color: black;
+    background-color: var(--main-bg-color);
     font-size: 1.5em;
 }
 
 .navbar {
-    background-color: black; /* Updated to match your site's theme */
+    background-color: var(--main-bg-color); /* Updated to match your site's theme */
     width: 100%;
     display: flex;
     justify-content: flex-end; /* Aligns nav items to the right */
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 1% 0;
 }
 
 .navbar ul {
@@ -47,7 +51,7 @@ body {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: black;
+    background-color: var(--main-bg-color);
     color: white;
     min-width: 160px;
     z-index: 1;
@@ -81,14 +85,14 @@ h1 {
     margin: 0;
     padding: 50px 0;
     text-align: center;
-    color: rgb(53, 53, 53);
+    color: black;
     font-weight: 1000;
 }
 
 footer {
     position: relative;
     bottom: 0;
-    background-color: black;
+    background-color: var(--main-bg-color);
     width: 100%;
     margin: 0;
     padding: 0;
