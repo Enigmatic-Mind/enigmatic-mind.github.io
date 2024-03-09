@@ -11,12 +11,14 @@ body{
     width: 100%;
 }
 
-.nav-header ul, .nav-footer ul{
+.nav-header ul {
+    display: flex;
     list-style-type: none;
     background-color: black;
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     overflow: hidden;
+    justify-content: flex-end;
 }
 
 .nav-header a, .nav-footer a{
@@ -29,10 +31,6 @@ body{
 
 .nav-header a:hover, .nav-footer a:hover{
     color: gray;
-}
-
-.nav-header li, .nav-footer li{
-    float: right;
 }
 
 .home_img {
@@ -59,4 +57,25 @@ footer {
     margin: 0px;
     padding: 0px;
     text-align: center;
+}
+
+
+/* New media query for screens smaller than 768px */
+@media screen and (max-width: 768px) {
+    .nav-header ul {
+        display: flex; /* Use flexbox */
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+        padding: 20px 0; /* Add some padding on top and bottom */
+    }
+
+    .nav-header li {
+        float: none; /* Disable floating */
+    }
+
+    .nav-header a {
+        padding: 10px; /* Adjust padding for smaller screens */
+        width: 100%; /* Make links fill the container */
+        text-align: center; /* Ensure text is centered */
+    }
 }
