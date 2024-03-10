@@ -138,6 +138,15 @@ footer {
 /* Areas of wellness page */
 /*  */
 
+.aow_description {
+    left: 50%; /* center horizontally */
+    transform: translate(0%); /* adjust the positioning to the center */
+    text-align: center;
+    color: white;
+    padding: 2em;
+
+}
+
 
 .area {
     position: relative;
