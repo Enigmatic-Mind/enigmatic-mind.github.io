@@ -168,6 +168,7 @@ footer {
     color: white;
     font-weight: bold;
     padding: 1em; /* add padding inside the description area */
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .area_description p {
