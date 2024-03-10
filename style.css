@@ -133,3 +133,34 @@ footer {
         font-size: 1.25em; /* Adjust font size for smaller screens */
     }
 }
+
+/*  */
+/* Areas of wellness page */
+/*  */
+
+
+.area {
+    position: relative;
+    width: 100%;
+}
+
+.area img {
+    width: 100%;
+    display: block; /* ensures the image takes up space and defines the height of .area */
+}
+
+.area_description {
+    position: absolute;
+    top: 50%; /* center vertically */
+    left: 50%; /* center horizontally */
+    transform: translate(-50%, -50%); /* adjust the positioning to the center */
+    width: 98%; /* ensure it spans the width of .area */
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    padding: 1em; /* add padding inside the description area */
+}
+
+.area_description p {
+    font-weight: 100;
+}
