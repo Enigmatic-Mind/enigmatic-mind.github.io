@@ -143,7 +143,6 @@ footer {
     transform: translate(0%); /* adjust the positioning to the center */
     text-align: center;
     color: white;
-    padding: 2em;
 
 }
 
@@ -163,12 +162,14 @@ footer {
     top: 50%; /* center vertically */
     left: 50%; /* center horizontally */
     transform: translate(-50%, -50%); /* adjust the positioning to the center */
-    width: 98%; /* ensure it spans the width of .area */
+    width: 100%; /* ensure it spans the width of .area */
     text-align: center;
     color: white;
     font-weight: bold;
-    padding: 1em; /* add padding inside the description area */
     background-color: rgba(0, 0, 0, 0.5);
+    margin: 0;
+    padding: 0;
+    padding-bottom: 20px;
 }
 
 .area:hover .area_description {
@@ -177,6 +178,9 @@ footer {
 
 .area_description p {
     font-weight: 100;
+    width: 98%;
+    text-align: center;
+    margin: auto;
 }
 
 
@@ -184,6 +188,7 @@ footer {
     .area_description {
         font-size: 0.75em;
         padding: 0;
+        padding-bottom: 20px;
     }
 }
 
@@ -192,6 +197,12 @@ footer {
         display: none;
     }
 }
+
+
+/* * {
+    box-sizing: border-box;
+} */
+
 
 /*  */
 /* Areas of wellness individual pages */
