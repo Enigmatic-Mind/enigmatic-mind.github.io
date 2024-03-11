@@ -174,3 +174,17 @@ footer {
 .area_description p {
     font-weight: 100;
 }
+
+
+@media screen and (max-width: 768px) {
+    .area_description {
+        font-size: 0.75em;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .area_description p {
+        display: none;
+    }
+}
