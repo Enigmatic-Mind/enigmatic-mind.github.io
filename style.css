@@ -171,6 +171,10 @@ footer {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+.area:hover .area_description {
+    color: rgb(219, 219, 219);
+}
+
 .area_description p {
     font-weight: 100;
 }
@@ -187,4 +191,32 @@ footer {
     .area_description p {
         display: none;
     }
+}
+
+/*  */
+/* Areas of wellness individual pages */
+/*  */
+
+.body {
+    background-color: white;
+    padding: 0px 2% 15px 2%;
+    margin-bottom: 15px;
+}
+
+.individual_area_description {
+    left: 50%; /* center horizontally */
+    transform: translate(0%); /* adjust the positioning to the center */
+    text-align: center;
+    color: black;
+    padding: 2em;
+    border-bottom: 5px;
+}
+
+
+
+/* Broad */
+.body li div {
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
 }
