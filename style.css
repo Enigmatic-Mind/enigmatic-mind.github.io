@@ -141,9 +141,14 @@ footer {
 .aow_description {
     left: 50%; /* center horizontally */
     transform: translate(0%); /* adjust the positioning to the center */
-    text-align: center;
+    text-align: justify;
     color: white;
+    width: 96%;
+    margin: auto;
+}
 
+.aow_description h2 {
+    text-align: center;
 }
 
 
@@ -178,8 +183,8 @@ footer {
 
 .area_description p {
     font-weight: 100;
-    width: 98%;
-    text-align: center;
+    width: 96%;
+    text-align: justify;
     margin: auto;
 }
 
