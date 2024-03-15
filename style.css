@@ -6,6 +6,10 @@
 
     --font-family-base: "Inter", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
 
+    --border-color: gray;
+
+    --font-color-h2: black;
+
     /* --font-color-base: var(--gray-7);
     --font-color-h1: var(--gray-9);
     --font-color-h2: var(--gray-7); */
@@ -31,9 +35,8 @@
 
 html {
     background-color: white;
-
     font-family: var(--font-family-base);
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 400;
     line-height: 1.6;
 }
@@ -54,32 +57,28 @@ h1 {
     left: 0;
     right: 0;
     margin: 0;
-    padding: 20px 0;
     text-align: center;
     color: black;
-    font-weight: 1000;
-}
-
-#descriptive_words {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    margin: 0;
-    padding: 50px 0;
-    text-align: center;
-    color: black;
-    font-weight: 1000;
+    font-weight: 650;
+    font-size: 2.5rem;
+    line-height: 2;
 }
 
 h2 {
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--font-color-h2);
+    font-size: 1.8rem;
+    font-weight: 600;
+    letter-spacing: -.05rem;
+    margin: 0 0 1rem;
+    padding-bottom: 0.4rem;
 }
 
-p {
+p, ul{
     line-height: 1.625;
     margin-bottom: 1.5rem;
     margin-top: 0;
+    font-size: 1.1rem;
 }
 
 a {
@@ -95,51 +94,46 @@ footer {
     bottom: 0;
     background-color: var(--main-bg-color);
     width: 100%;
-    margin: 1% 0 1% 0;
+    margin-left: 0;
+    margin-right: 0;
     padding: 0;
+    padding-bottom: auto;
     text-align: center;
 }
 
-@media screen and (min-width: 700px) {
-
-}
-
 @media screen and (max-width: 700px) {
-
+    p {
+        font-size: 1rem;
+    }
+    
+    h1 {
+        font-size: 2.2rem;
+    }
+    
+    h2 {
+        font-size: 1.7rem;
+    }
 }
 
 
-/* 
-div container for body {
-    padding 16 px left and right. 32 if larger
 
-}
 
-p {
-    1.1rem if larger than 700px
-    1rem if less than 700 px
-}
 
-h1 {
- over 700, 3rem
- if under 2.2 rem
-     font-weight: 700;
-    line-height: 1.1;
+
+
+/* CLEAN CODE BELOW */
+/* HOME PAGE */
+#descriptive_words {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
     margin: 0;
+    padding: 50px 0;
+    text-align: center;
+    color: black;
+    font-weight: 1000;
 }
-
-h2 {
-    border-bottom: 1px solid var(--border-color);
-    color: var(--font-color-heading);
-    font-family: var(--font-family-nav);
-    font-size: 1.7rem; <- 2rem if over 700 px
-    font-weight: 700;
-    letter-spacing: -.05rem;
-    margin: 0 0 1rem;
-    padding-bottom: 0.4rem;
-}
-
-*/
 
 
 .navbar {
@@ -234,12 +228,6 @@ h2 {
 
 }
 
-@media screen and (max-width: 480px) {
-    body {
-        font-size: 1.25em; /* Adjust font size for smaller screens */
-    }
-}
-
 /*  */
 /* Areas of wellness page */
 /*  */
@@ -248,7 +236,7 @@ h2 {
     left: 50%; /* center horizontally */
     transform: translate(0%); /* adjust the positioning to the center */
     text-align: justify;
-    color: white;
+    color: black;
     width: 96%;
     margin: auto;
 }
@@ -276,11 +264,14 @@ h2 {
     width: 100%; /* ensure it spans the width of .area */
     text-align: center;
     color: white;
-    font-weight: bold;
     background-color: rgba(0, 0, 0, 0.5);
     margin: 0;
     padding: 0;
-    padding-bottom: 20px;
+    padding-bottom: 20px;;
+}
+
+.area_description h2 {
+    color: white;
 }
 
 .area:hover .area_description {
@@ -288,7 +279,6 @@ h2 {
 }
 
 .area_description p {
-    font-weight: 100;
     width: 96%;
     text-align: justify;
     margin: auto;
@@ -296,12 +286,7 @@ h2 {
 
 
 @media screen and (max-width: 768px) {
-    .aow_description p {
-        font-size: 0.75em;
-    }
-
     .area_description {
-        font-size: 0.75em;
         padding: 0;
         padding-bottom: 20px;
     }
