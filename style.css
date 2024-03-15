@@ -1,14 +1,146 @@
 :root {
     --main-bg-color: rgb(39, 39, 39);
+    --content-width: 780px;
+    --content-width--small: 560px;
+    --content-width--medium: 700px;
+
+    --font-family-base: "Inter", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+
+    /* --font-color-base: var(--gray-7);
+    --font-color-h1: var(--gray-9);
+    --font-color-h2: var(--gray-7); */
+    
+
+    /* --link: var(--indigo);
+    --link-hover-color: var(--indigo-muted); */
+
+    /* nav background
+    nav text
+        nav hover
+    footer background
+    footer text 
+    home hero text
+    h1
+    h2
+    p
+        link
+        link hover */
+    
+
+}
+
+html {
+    background-color: white;
+
+    font-family: var(--font-family-base);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
 }
 
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial;
-    background-color: var(--main-bg-color);
-    font-size: 1.5em;
 }
+
+.body {
+    max-width: var(--content-width);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 20px 0;
+    text-align: center;
+    color: black;
+    font-weight: 1000;
+}
+
+#descriptive_words {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 50px 0;
+    text-align: center;
+    color: black;
+    font-weight: 1000;
+}
+
+h2 {
+    border-bottom: 1px solid gray;
+}
+
+p {
+    line-height: 1.625;
+    margin-bottom: 1.5rem;
+    margin-top: 0;
+}
+
+a {
+    color: var(--link);
+}
+
+a:hover {
+    color: var(--link-hover-color);
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    background-color: var(--main-bg-color);
+    width: 100%;
+    margin: 1% 0 1% 0;
+    padding: 0;
+    text-align: center;
+}
+
+@media screen and (min-width: 700px) {
+
+}
+
+@media screen and (max-width: 700px) {
+
+}
+
+
+/* 
+div container for body {
+    padding 16 px left and right. 32 if larger
+
+}
+
+p {
+    1.1rem if larger than 700px
+    1rem if less than 700 px
+}
+
+h1 {
+ over 700, 3rem
+ if under 2.2 rem
+     font-weight: 700;
+    line-height: 1.1;
+    margin: 0;
+}
+
+h2 {
+    border-bottom: 1px solid var(--border-color);
+    color: var(--font-color-heading);
+    font-family: var(--font-family-nav);
+    font-size: 1.7rem; <- 2rem if over 700 px
+    font-weight: 700;
+    letter-spacing: -.05rem;
+    margin: 0 0 1rem;
+    padding-bottom: 0.4rem;
+}
+
+*/
+
 
 .navbar {
     background-color: var(--main-bg-color); /* Updated to match your site's theme */
@@ -75,28 +207,6 @@ body {
 .home_img {
     width: 100%;
     position: relative;
-}
-
-h1 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    margin: 0;
-    padding: 50px 0;
-    text-align: center;
-    color: black;
-    font-weight: 1000;
-}
-
-footer {
-    position: relative;
-    bottom: 0;
-    background-color: var(--main-bg-color);
-    width: 100%;
-    margin: 1% 0 1% 0;
-    padding: 0;
-    text-align: center;
 }
 
 .nav-footer a{
@@ -203,12 +313,6 @@ footer {
     }
 }
 
-
-/* * {
-    box-sizing: border-box;
-} */
-
-
 /*  */
 /* Areas of wellness individual pages */
 /*  */
@@ -234,9 +338,6 @@ footer {
     text-align: center;
 }
 
-
-
-/* Broad */
 .body li div {
     font-weight: 600;
     padding: 0;
