@@ -230,7 +230,7 @@ footer {
 
 #descriptive_words {
     position: absolute;
-    padding: 50px 0;
+    top: 50px;
     text-align: center;
     color: black;
     font-family: Arial;
