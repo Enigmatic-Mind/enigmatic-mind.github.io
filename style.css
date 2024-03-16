@@ -140,20 +140,22 @@ a:hover {
 /* FOOTER */
 
 footer {
-    position: relative;
-    bottom: 0;
-    background-color: var(--main-bg-color);
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-    padding: 0;
-    padding-bottom: auto;
+    /* position: relative; */
+    /* bottom: 0; */
+    /* background-color: var(--main-bg-color); */
+    /* width: 100%; */
+    /* margin-left: 0; */
+    /* margin-right: 0; */
+    /* padding: 0; */
+    /* padding-bottom: auto; */
     text-align: center;
+    /* padding: 100%; */
+    padding: 10px 0;
 }
 
 .nav-footer a{
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 /* FOR SMALLER SCREENS */
@@ -213,6 +215,17 @@ footer {
 .home_div {
     width: 100%;
     position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+.content {
+    padding: 0;
+    margin: 0;
+}
+
+.content img {
+    display: block;
 }
 
 #descriptive_words {
@@ -220,6 +233,7 @@ footer {
     padding: 50px 0;
     text-align: center;
     color: black;
+    font-family: Arial;
     font-weight: 1000;
 }
 
