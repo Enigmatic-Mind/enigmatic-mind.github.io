@@ -327,7 +327,6 @@ footer {
 .socialmedia_imgs {
     height: 80px;
     display: block;
-    margin: 0 auto;
 }
 
 .borderless {
@@ -403,88 +402,44 @@ footer {
 
 
 
-
 .touchsociallist {
     list-style: none;
     padding: 0;
     margin: 0;
-    align-items: left;
 }
 
 .touchsociallist li {
     display: flex;
-    align-items: left; /* Align items vertically in the center */
-    margin: 10px 0; /* Add some vertical space between items */
-    padding: 0;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 20px 0;
 }
 
-.touchsociallist a {
-    display: flex;
-    align-items: left; /* Ensure the text is aligned with the image */
-    text-decoration: none;
-    color: inherit; /* Optional: Ensures the link color matches your design */
-    margin: 0;
-    padding: 0;
-
+.touchsociallist li div.description {
+    margin-left: 5px;
 }
 
 .touchsociallist li a {
-    flex-grow: 1;
+    /* display/: flex; */
+    /* align-items: left; */
+    text-decoration: none;
     margin: 0;
     padding: 0;
+    margin-bottom: 5px;
+
 }
 
-.touchsociallist li a img {
-    flex-shrink: 0; /* Prevents the image from shrinking */
-    margin: 0;
-    padding: 0;
+.socialmedia_imgs {
+    margin-right: 10px;
+    height: auto;
+    width: 80px;
 }
 
-.touchsociallist li a span {
-    white-space: nowrap; /* Adjust as needed for wrapping */
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-
-/* .touchsociallist {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.description {
+    text-align: left; /* Ensures description text is aligned to the left */
     justify-content: center;
-    text-align: center;
 }
 
-.touchsociallist li {
+div .description {
     margin: auto;
 }
-
-.touchsociallist a {
-    text-decoration: none;
-}
-
-@media screen and (max-width: 780px) {
-    .touchsociallist {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .touchsociallist li {
-        display: flex;
-        align-items: center;
-        margin: 10px;
-    }
-
-    .socialmedia_imgs {
-        margin-right: 10px;
-    }
-
-    .touchsociallist a {
-        display: flex;
-        align-items: center;
-        text-decoration: none;
-    }
-} */
