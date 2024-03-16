@@ -303,3 +303,22 @@ footer {
 .individual_area_description {
     text-align: justify;
 }
+
+/* CONTACT PAGE */
+.sociallist {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.sociallist li {
+    margin: auto;
+}
+
+.socialmedia_imgs {
+    height: 80px;
+}
+
+.borderless {
+    border-bottom: none;
+}
