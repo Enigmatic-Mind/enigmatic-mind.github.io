@@ -159,9 +159,9 @@ footer {
 /* FOR SMALLER SCREENS */
 
 @media screen and (max-width: 810px) {
-    .body {
+    /* .body {
         width: 90%;
-    }
+    } */
 }
 
 @media screen and (max-width: 780px) {
