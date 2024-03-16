@@ -1,6 +1,6 @@
 :root {
     --main-bg-color: rgb(39, 39, 39);
-    --content-width: 750px;
+    --content-width: 780px;
 
     --font-family-base: "Inter", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
 
@@ -42,6 +42,7 @@ body {
     max-width: var(--content-width);
     margin-left: auto;
     margin-right: auto;
+    padding: 0 20px;
 }
 
 h1 {
@@ -246,22 +247,14 @@ footer {
 
 .aow_description {
     max-width: var(--content-width);
-    
-    /* left: 50%; */
-    /* transform: translate(0%); */
     text-align: justify;
-    /* width: 96%; */
     margin: auto;
 }
-
-.aow_description h2 {
-    text-align: center;
-}
-
 
 .area {
     position: relative;
     width: 100%;
+    margin-bottom: 30px;
 }
 
 .area img {
