@@ -161,12 +161,6 @@ footer {
 
 /* FOR SMALLER SCREENS */
 
-@media screen and (max-width: 810px) {
-    /* .body {
-        width: 90%;
-    } */
-}
-
 @media screen and (max-width: 780px) {
     p {
         font-size: 1rem;
@@ -238,6 +232,11 @@ footer {
     font-weight: 1000;
 }
 
+@media screen and (max-width: 425px) {
+    #descriptive_words {
+        font-size: 8vw;
+    }
+}
 
 
 
