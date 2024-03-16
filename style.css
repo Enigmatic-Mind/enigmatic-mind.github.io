@@ -1,37 +1,23 @@
 :root {
     --main-bg-color: rgb(39, 39, 39);
-    --content-width: 780px;
+    --content-width: 750px;
 
     --font-family-base: "Inter", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
 
     --border-color: gray;
 
-    --font-color-h2: black;
+    --navbar-background-color: rgb(39, 39, 39);
 
-    --font-color-base: var(black);
-    --font-color-h1: var(black);
-    --font-color-h2: var(black);
+    --font-color-base: #2c2c2c;
+    --font-color-h1: black;
+    --font-color-h2: black;
+    --font-color-home-heading: black;
 
     --font-color-navbar: white;
-    --font-color-navbar-link: gray;
+    --font-color-navbar-hover: gray;
     
-
-    /* --link: var(--indigo);
-    --link-hover-color: var(--indigo-muted); */
-
-    /* nav background
-    nav text
-        nav hover
-    footer background
-    footer text 
-    home hero text
-    h1
-    h2
-    p
-        link
-        link hover */
-    
-
+    --link-color: black;
+    --link-color-hover: gray;
 }
 
 /* GENERAL WEBPAGE */
@@ -41,6 +27,7 @@ html {
     font-family: var(--font-family-base);
     font-size: 17px;
     font-weight: 400;
+    color: var(--font-color-base);
     line-height: 1.6;
 }
 
@@ -82,6 +69,7 @@ p, ul{
     margin-bottom: 1.5rem;
     margin-top: 0;
     font-size: 1.1rem;
+    color: var(--font-color-base);
 }
 
 a {
@@ -168,7 +156,13 @@ footer {
 
 /* FOR SMALLER SCREENS */
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 810px) {
+    .body {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 780px) {
     p {
         font-size: 1rem;
     }
@@ -187,8 +181,13 @@ footer {
         width: 100%;
     }
 
-    .navbar li, .dropdown-content li {
+    .navbar li {
         width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .dropdown-content li {
+        margin-bottom: 0;
     }
 
     .navbar ul {
@@ -199,11 +198,13 @@ footer {
     .navbar a {
         text-align: center;
         margin: 0;
-        margin-bottom: 15px;
+    }
+
+    .navbar li:last-child {
+        margin-bottom: 0;
     }
 
 }
-
 
 /* HOME PAGE */
 
@@ -227,15 +228,10 @@ footer {
 
 /* CLEAN CODE BELOW */
 
-/*  */
-/* Areas of wellness page */
-/*  */
-
 .aow_description {
-    left: 50%; /* center horizontally */
-    transform: translate(0%); /* adjust the positioning to the center */
+    left: 50%;
+    transform: translate(0%);
     text-align: justify;
-    color: black;
     width: 96%;
     margin: auto;
 }
@@ -281,6 +277,7 @@ footer {
     width: 94%;
     text-align: justify;
     margin: auto;
+    color: white;
 }
 
 
