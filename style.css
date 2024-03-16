@@ -309,16 +309,182 @@ footer {
     display: flex;
     flex-direction: row;
     list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    text-align: center;
+
 }
 
 .sociallist li {
     margin: auto;
 }
 
+.sociallist a {
+    text-decoration: none;
+}
+
 .socialmedia_imgs {
     height: 80px;
+    display: block;
+    margin: 0 auto;
 }
 
 .borderless {
     border-bottom: none;
+    margin: 0;
+    padding: 0;
 }
+
+#youtube {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #EE312D;
+}
+
+#twitter {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+#linkedin {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #027BB5;
+}
+
+#reddit a {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #FE4500;
+}
+
+#discord a {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #5765F2;
+}
+
+#patreon a {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+#calendly a {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #016AFF;
+}
+
+@media screen and (max-width: 780px) {
+    .sociallist {
+        flex-direction: row; /* Change to row for a horizontal layout */
+        flex-wrap: wrap; /* Allow items to wrap if necessary */
+        justify-content: center; /* Keep items centered */
+    }
+
+    .sociallist li {
+        display: flex;
+        align-items: center; /* Align items vertically in the center */
+        margin: 10px; /* Add some space around each item */
+    }
+
+    .socialmedia_imgs {
+        margin-right: 10px; /* Space between the image and the text */
+    }
+
+    .sociallist a {
+        display: flex;
+        align-items: center; /* Align text with image */
+        text-decoration: none;
+    }
+}
+
+
+
+
+
+.touchsociallist {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    align-items: left;
+}
+
+.touchsociallist li {
+    display: flex;
+    align-items: left; /* Align items vertically in the center */
+    margin: 10px 0; /* Add some vertical space between items */
+    padding: 0;
+}
+
+.touchsociallist a {
+    display: flex;
+    align-items: left; /* Ensure the text is aligned with the image */
+    text-decoration: none;
+    color: inherit; /* Optional: Ensures the link color matches your design */
+    margin: 0;
+    padding: 0;
+
+}
+
+.touchsociallist li a {
+    flex-grow: 1;
+    margin: 0;
+    padding: 0;
+}
+
+.touchsociallist li a img {
+    flex-shrink: 0; /* Prevents the image from shrinking */
+    margin: 0;
+    padding: 0;
+}
+
+.touchsociallist li a span {
+    white-space: nowrap; /* Adjust as needed for wrapping */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/* .touchsociallist {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    text-align: center;
+}
+
+.touchsociallist li {
+    margin: auto;
+}
+
+.touchsociallist a {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 780px) {
+    .touchsociallist {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .touchsociallist li {
+        display: flex;
+        align-items: center;
+        margin: 10px;
+    }
+
+    .socialmedia_imgs {
+        margin-right: 10px;
+    }
+
+    .touchsociallist a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    }
+} */
