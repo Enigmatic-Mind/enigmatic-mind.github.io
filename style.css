@@ -1,8 +1,6 @@
 :root {
     --main-bg-color: rgb(39, 39, 39);
     --content-width: 780px;
-    --content-width--small: 560px;
-    --content-width--medium: 700px;
 
     --font-family-base: "Inter", -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
 
@@ -10,9 +8,12 @@
 
     --font-color-h2: black;
 
-    /* --font-color-base: var(--gray-7);
-    --font-color-h1: var(--gray-9);
-    --font-color-h2: var(--gray-7); */
+    --font-color-base: var(black);
+    --font-color-h1: var(black);
+    --font-color-h2: var(black);
+
+    --font-color-navbar: white;
+    --font-color-navbar-link: gray;
     
 
     /* --link: var(--indigo);
@@ -32,6 +33,8 @@
     
 
 }
+
+/* GENERAL WEBPAGE */
 
 html {
     background-color: white;
@@ -58,7 +61,7 @@ h1 {
     right: 0;
     margin: 0;
     text-align: center;
-    color: black;
+    color: var(--font-color-h1);
     font-weight: 650;
     font-size: 2.5rem;
     line-height: 2;
@@ -89,6 +92,63 @@ a:hover {
     color: var(--link-hover-color);
 }
 
+/* NAVIGATION BAR */
+
+.navbar {
+    background-color: var(--main-bg-color);
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px 0;
+    margin: 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+.navbar li {
+    float: left;
+    /* position: relative; */
+}
+
+.navbar a {
+    color: var(--font-color-navbar);
+    text-decoration: none;
+    margin-right: 15px;
+    display: block;
+    /* background-color: tan; */
+}
+
+.navbar a:hover, .nav-footer a:hover, .dropdown:hover .dropbtn {
+    color: var(--font-color-navbar-link);
+}
+
+.dropdown:hover .dropdown-content {
+    display: flex;
+}
+
+.dropdown-content {
+    background-color: var(--main-bg-color);
+    display: none;
+    position: absolute;
+    color: var(--font-color-navbar);
+    z-index: 1;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 13px;
+}
+
+.dropdown-content a {
+    color: var(--font-color-navbar);
+    padding: 7px 0px;
+    margin: 0;
+    margin: auto;
+}
+
+
+/* FOOTER */
+
 footer {
     position: relative;
     bottom: 0;
@@ -100,6 +160,13 @@ footer {
     padding-bottom: auto;
     text-align: center;
 }
+
+.nav-footer a{
+    text-decoration: none;
+    color: white;
+}
+
+/* FOR SMALLER SCREENS */
 
 @media screen and (max-width: 700px) {
     p {
@@ -113,22 +180,40 @@ footer {
     h2 {
         font-size: 1.7rem;
     }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .navbar li, .dropdown-content li {
+        width: 100%;
+    }
+
+    .navbar ul {
+        padding: 0;
+        width: 100%;
+    }
+
+    .navbar a {
+        text-align: center;
+        margin: 0;
+        margin-bottom: 15px;
+    }
+
 }
 
 
-
-
-
-
-
-/* CLEAN CODE BELOW */
 /* HOME PAGE */
+
+.home_div {
+    width: 100%;
+    position: relative;
+}
+
 #descriptive_words {
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    margin: 0;
     padding: 50px 0;
     text-align: center;
     color: black;
@@ -136,97 +221,11 @@ footer {
 }
 
 
-.navbar {
-    background-color: var(--main-bg-color); /* Updated to match your site's theme */
-    width: 100%;
-    display: flex;
-    justify-content: flex-end; /* Aligns nav items to the right */
-    list-style-type: none;
-    margin: 0;
-    padding: 1% 0;
-}
-
-.navbar ul {
-    list-style-type: none;
-    padding: 0 10px;
-    margin: 0; /* Resets default margin */
-}
-
-.navbar a {
-    color: white;
-    text-decoration: none;
-    padding: 10px;
-    display: block; /* Changed to block for consistency with dropdown styles */
-    text-align: center;
-}
-
-.navbar a:hover, .nav-footer a:hover, .dropdown:hover .dropbtn {
-    color: gray; /* Maintain your hover color */
-}
-
-.dropdown:hover .dropdown-content {
-    display: flex;
-}
-
-.navbar li {
-    float: left; /* For horizontal layout */
-    position: relative; /* For dropdown positioning */
-}
-
-/* Dropdown Content */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: var(--main-bg-color);
-    color: white;
-    min-width: 160px;
-    z-index: 1;
-    flex-direction: column;
-    align-items: center; /* This will center-align the child elements */
-    text-align: center;
-    left: 50%;
-    transform: translateX(-50%);
-}
 
 
-.dropdown-content a {
-    color: white;
-    padding: 12px 0px; /* Adjust padding as needed, ensure it's symmetrical */
-    text-decoration: none;
-    text-align: center; /* This ensures text alignment */
-    width: 100%; /* Ensures link uses full width of its container */
-}
 
 
-.home_img {
-    width: 100%;
-    position: relative;
-}
-
-.nav-footer a{
-    text-decoration: none;
-    color: white;
-}
-
-/* Responsive adjustments */
-@media screen and (max-width: 768px) {
-    .navbar {
-        flex-direction: column; /* Stack items vertically */
-        align-items: center; /* Center items */
-    }
-    
-
-    .navbar li, .dropdown-content li {
-        width: 100%; /* Full width for stacked items */
-    }
-
-    .navbar a {
-        padding: 10px;
-        text-align: center;
-        width: 100%;
-    }
-
-}
+/* CLEAN CODE BELOW */
 
 /*  */
 /* Areas of wellness page */
@@ -279,18 +278,11 @@ footer {
 }
 
 .area_description p {
-    width: 96%;
+    width: 94%;
     text-align: justify;
     margin: auto;
 }
 
-
-@media screen and (max-width: 768px) {
-    .area_description {
-        padding: 0;
-        padding-bottom: 20px;
-    }
-}
 
 @media screen and (max-width: 650px) {
     .area_description p {
@@ -298,33 +290,6 @@ footer {
     }
 }
 
-/*  */
-/* Areas of wellness individual pages */
-/*  */
-
-.body {
-    background-color: white;
-    padding: 0px 2% 15px 2%;
-    margin-bottom: 15px;
-}
-
 .individual_area_description {
-    left: 50%; /* center horizontally */
-    transform: translate(0%); /* adjust the positioning to the center */
     text-align: justify;
-    color: black;
-    width: 98%;
-    margin: auto;
-    padding-top: 1%;
-    border-bottom: 5px;
-}
-
-.individual_area_description h2 {
-    text-align: center;
-}
-
-.body li div {
-    font-weight: 600;
-    padding: 0;
-    margin: 0;
 }
