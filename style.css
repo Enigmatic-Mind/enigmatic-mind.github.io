@@ -466,3 +466,19 @@ div .description {
 #about p {
     text-align: justify;
 }
+
+
+/* EFFORTS PAGES */
+.project_description_heading {
+    border-bottom: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.project_description_p {
+    font-style: italic;
+    border-bottom: 1px solid var(--border-color);
+    margin: 0 0 1rem;
+    padding-bottom: 0.4rem;
+}
