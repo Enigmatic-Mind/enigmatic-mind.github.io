@@ -352,6 +352,12 @@ footer {
     color: #027BB5;
 }
 
+#github {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: black;
+}
+
 #reddit a {
     font-size: 1.5rem;
     font-weight: 700;
@@ -442,4 +448,10 @@ footer {
 
 div .description {
     margin: auto;
+}
+
+
+/* ABOUT PAGE */
+#about p {
+    text-align: justify;
 }
