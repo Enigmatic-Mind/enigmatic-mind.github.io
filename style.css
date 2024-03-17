@@ -304,7 +304,18 @@ footer {
     text-align: justify;
 }
 
+ul a:hover {
+    color: white;
+    background-color: var(--main-bg-color);
+}
+
+.sociallist a:hover, .touchsociallist a:hover {
+    color: initial; /* Or any specific color */
+    background-color: transparent; /* Resets to no background color */
+}
+
 /* CONTACT PAGE */
+
 .sociallist {
     display: flex;
     flex-direction: row;
@@ -335,24 +346,24 @@ footer {
     padding: 0;
 }
 
-#youtube {
+#youtube a {
     font-size: 1.5rem;
     font-weight: 700;
     color: #EE312D;
 }
 
-#twitter {
+#twitter a {
     font-size: 1.5rem;
     font-weight: 700;
 }
 
-#linkedin {
+#linkedin a {
     font-size: 1.5rem;
     font-weight: 700;
     color: #027BB5;
 }
 
-#github {
+#github a {
     font-size: 1.5rem;
     font-weight: 700;
     color: black;
