@@ -484,8 +484,8 @@ div .description {
 }
 
 .nopm {
-    padding: 0;
-    margin: 0;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 .pageend {
