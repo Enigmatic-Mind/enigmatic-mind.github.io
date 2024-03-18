@@ -482,3 +482,12 @@ div .description {
     margin: 0 0 1rem;
     padding-bottom: 0.4rem;
 }
+
+.nopm {
+    padding: 0;
+    margin: 0;
+}
+
+.pageend {
+    margin-bottom: 50px;
+}
