@@ -67,6 +67,19 @@ h2 {
     padding-bottom: 0.4rem;
 }
 
+h3 {
+    border-bottom: 1px solid var(--border-color);
+    color: var(--font-color-h2);
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: -.05rem;
+    margin: 0 0 1rem;
+    padding-bottom: 0.4rem;
+    /* text-decoration: underline; */
+    font-style: italic;
+
+}
+
 p, ul{
     line-height: 1.625;
     margin-bottom: 1.5rem;
