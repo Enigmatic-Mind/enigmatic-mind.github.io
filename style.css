@@ -504,3 +504,20 @@ div .description {
 .pageend {
     margin-bottom: 50px;
 }
+
+/* MTOH */
+
+.tableofcontents, .tableofcontents ul {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.tableofcontents li {
+    font-size: 0.9rem;
+}
+
+.tableofcontents {
+    margin-bottom: 50px;
+}
