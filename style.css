@@ -530,3 +530,8 @@ div .description {
     margin-left: auto;
     margin-right: auto;
 }
+
+/* terms */
+.nav-footer .terms {
+    margin-left: 3rem;
+}
