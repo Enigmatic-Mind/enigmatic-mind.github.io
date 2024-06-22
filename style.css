@@ -100,7 +100,7 @@ h5 {
     /* text-decoration: underline; */
 }
 
-p, ul{
+p, ul, ol{
     line-height: 1.625;
     margin-bottom: 1.5rem;
     margin-top: 0;
@@ -195,7 +195,7 @@ footer {
 /* FOR SMALLER SCREENS */
 
 @media screen and (max-width: 780px) {
-    p, ul {
+    p, ul, ol {
         font-size: 1rem;
     }
     
