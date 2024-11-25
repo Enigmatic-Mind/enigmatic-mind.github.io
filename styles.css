@@ -1,0 +1,96 @@
+h2 {
+    color: #000;
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#h2caption {
+    color: #000;
+    font-size: 1.3rem;
+    margin: 0;
+    margin-bottom: 50px;
+}
+
+
+body {
+    background-image: url('assets/bgnature2.jpg'); /* Path to your image */
+    background-size: cover; /* Scales the image to cover the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+    min-height: 100vh; /* Ensures it covers the viewport */
+    background-attachment: fixed;
+    font-family: 'arial';
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    text-align: center;
+    max-width: 600px;
+    width: 90%; /* Ensures responsiveness */
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5rem;
+    margin-bottom: auto;
+  }
+  
+  .profile-image {
+    width: 175px;
+    height: 175px;
+    border-radius: 20%; /* Circular image */
+    object-fit: cover;
+  }
+  
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center; /* Ensures the buttons align perfectly */
+    margin-bottom: 5rem;
+  }
+  
+  .link-button {
+    display: flex; /* Use Flexbox */
+    justify-content: center; /* Center the text horizontally */
+    align-items: center; /* Center text and icon vertically */
+    position: relative; /* Allows positioning of the icon */
+    text-decoration: none;
+    background-color: #fff;
+    opacity: 0.9;
+    color: #000;
+    font-size: 1.32rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    width: 100%; /* Ensures all buttons are the same width */
+    max-width: 700px; /* Restricts the width */
+    height: 80px; /* Keeps the height constant */
+    box-sizing: border-box; /* Ensures padding doesn’t increase the total size */
+    padding: 0 10px; /* Adds space inside the button */
+  }
+  
+  .link-icon {
+    height: auto; /* Set icon size */
+    width: 60px; /* Set icon size */
+    border-radius: 5%;
+    position: absolute; /* Position icon independently */
+    left: 1rem; /* Align the icon to the left edge */
+  }
+
+  #sellapp {
+    height: 60px;
+    width: auto;
+    left: 30px;
+  }
+
+
+  .link-button:hover {
+    transform: scale(1.05);
+  }
+  
