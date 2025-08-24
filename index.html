@@ -1,46 +1,111 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Francisco Monroy.xyz</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>$5M Journey — Scorecard</title>
+  <meta name="description" content="A calm, clean scorecard for my $5M app journey: countdown, MRR, revenue, savings, debt, and app links.">
+  <!-- Optional: Inter for crisp sans. Remove if you prefer full system font. -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <img src="assets/profile-image.jpeg" alt="Profile Image" class="profile-image">
-    <h2>Francisco Monroy</h2>
-    <p id="h2caption">Big dreams, bold action, and innovative tech</p>
-    <div class="links">
-      <a href="https://www.youtube.com/@FMTechpreneur" class="link-button">
-        <img src="assets/youtube.png" alt="YouTube Icon" class="link-icon">
-        YouTube
-      </a>
-      <a href="https://forms.gle/ACMkwpnNqgnKR2fn6" class="link-button">
-        <img src="assets/email.jpg" alt="Email Icon" class="link-icon">
-        Sign up for my newsletter
-      </a>
-      <a href="https://x.com/franciscomnroy" class="link-button">
-        <img src="assets/x.png" alt="X Icon" class="link-icon">
-        X
-      </a>
-      <a href="https://bsky.app/profile/franciscomnroy.bsky.social" class="link-button">
-        <img src="assets/bluesky.png" alt="BlueSky Icon" class="link-icon">
-        BlueSky
-      </a>
-      <a href="https://forms.gle/pbrVYPTQLid58VXj6" class="link-button">
-        <img src="assets/handshake.png" alt="Handshake Icon" class="link-icon">
-        Work with me!
-      </a>
-      <a href="https://forms.gle/45V3vzQCjxJMEXYi9" class="link-button">
-        <img src="assets/app.png" alt="App Icon" class="link-icon" id="sellapp">
-        Sell me your app
-      </a>
-      <a href="https://www.linkedin.com/in/francisco-luquin/" class="link-button">
-        <img src="assets/linkedin.png" alt="LinkedIn Icon" class="link-icon">
-        LinkedIn
-      </a>
+  <!-- Header -->
+  <header class="bc-header">
+    <div class="bc-wrap">
+      <div class="brand">
+        <a href="/" class="wordmark">$5M JOURNEY OFFICIAL SCORECARD</a>
+      </div>
+      <a id="socialLink" class="button-outline" href="#" target="_blank" rel="noopener">Follow the journey →</a>
     </div>
-  </div>
+  </header>
+
+  <main>
+    <!-- Hero sentence -->
+    <section class="hero">
+      <div class="bc-wrap">
+        <h1 class="hero-title">I’m betting it all on this.</h1>
+        <p class="hero-lede">
+          I’m building apps from my mom's home and posting every day until I make <strong>$5M</strong>. If I don't make $40K in the next year, I need to put my dream to the side for a bit and get a full-time job.
+        </p>
+      </div>
+    </section>
+
+    <section id="scorecard" class="scorecard">
+      <div class="bc-wrap">
+        <div class="stats">
+
+          <!-- Days Left -->
+          <div class="stat">
+            <div class="stat-label">Days left</div>
+            <div class="stat-value mono" id="daysLeft">365</div>
+            <div class="stat-sub">
+              <span class="mono" id="startLabel">Start —</span> → <span class="mono" id="endLabel">End —</span>
+            </div>
+          </div>
+
+          <!-- MRR -->
+          <div class="stat">
+            <div class="stat-label">I’m aiming for $3k MRR. So far I’m at</div>
+            <div class="stat-value mono" id="mrrValue">$21 / $3,000</div>
+            <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="3000" aria-valuenow="21" aria-label="MRR progress">
+              <span id="mrrBar" class="fill"></span>
+            </div>
+          </div>
+
+          <!-- Total Revenue -->
+          <div class="stat">
+            <div class="stat-label">In total, my apps have made</div>
+            <div class="stat-value mono" id="revenueValue">$105</div>
+          </div>
+
+          <!-- Savings -->
+          <div class="stat">
+            <div class="stat-label">Savings left</div>
+            <div class="stat-value mono" id="savingsValue">$0</div>
+            <div class="stat-sub">Monthly expenses ~ <span class="mono" id="expensesValue">$0</span></div>
+          </div>
+
+          <!-- Debt -->
+          <div class="stat">
+            <div class="stat-label">Total (student) debt</div>
+            <div class="stat-value mono" id="debtValue">$0</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Apps list (reusing your card vibe) -->
+    <section id="apps" class="apps">
+      <div class="bc-wrap">
+        <h2 class="section-title">Apps</h2>
+        <p class="section-note"></p>
+        <div class="apps-grid">
+          <div class="app-card">
+            <a href="https://apps.apple.com/us/app/roast-app-battle-bot/id6744312924">
+              <img src="roastbot.png" alt="Roast Bot Logo">
+            </a>
+            <div class="app-name">Roast Bot</div>
+          </div>
+          <div class="app-card">
+            <a href="https://apps.apple.com/us/app/cryptoplanner/id6741693789">
+              <img src="cryptoplanner_logo.png" alt="CryptoPlanner Logo">
+            </a>
+            <div class="app-name">CryptoPlanner</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footnote -->
+    <section class="footnote">
+      <div class="bc-wrap">
+        <p class="tiny">Manually updated for now. Last updated <span id="lastUpdated" class="mono">—</span>.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
