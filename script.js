@@ -3,9 +3,9 @@ const CONFIG = {
   SOCIAL_LINK: "https://www.youtube.com/@Francisco_Monroy?sub_confirmation=1",
   START_DATE:  "2025-08-23",   // YYYY-MM-DD
   DURATION_DAYS: 365,
-  MRR_CURRENT: 21,
+  MRR_CURRENT: 27,
   MRR_TARGET: 3000,
-  TOTAL_REVENUE: 105,
+  TOTAL_REVENUE: 135,
   SAVINGS_LEFT: 15000 + 2249.23,
   TOTAL_DEBT: 88881.43,
   MONTHLY_EXPENSES: 1200
